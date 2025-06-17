@@ -1,12 +1,38 @@
-# React + Vite
+# 🛍️ ShopMart - React E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ShopMart** is a fully functional and visually appealing e-commerce frontend project built using **React.js** and **Vite**. It features product filtering, add-to-cart functionality, promo code system, smooth animations, and a fully responsive design — all crafted for a seamless shopping experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔎 **Product Filtering** (by category, price range, and more)
+- 🛒 **Add to Cart** functionality with dynamic updates
+- 💸 **Discount Promo Code** integration
+- 🎨 **Animated Banners** and smooth UI transitions
+- 📱 **Mobile Responsive** design
+- 🧩 **Reusable Components** for scalability
+- ✨ **Clean and Modern UI** using Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧑‍💻 Tech Stack
+
+| Technology     | Purpose              |
+|----------------|----------------------|
+| React.js       | Frontend framework   |
+| Vite           | Build tool & dev server |
+| Tailwind CSS   | UI styling framework |
+| React Router   | Page navigation      |
+| useContext API | Global state (cart)  |
+| Netlify        | Hosting platform     |
+
+---
+
+## 🔗 Live Demo
+
+🌐 **Hosted on Netlify**  
+👉 [View Live Website](https://shopmart-1.netlify.app/)
+
+---
+
