@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { categories, products } from '../data/dummyData.jsx';
+import { categories, products } from '../Data/DummyData.jsx';
 
 const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);

@@ -1,20 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { CartProvider } from './context/CartContext.jsx';
-import Navbar from './components/Navbar.jsx';
-import Footer from './components/Footer.jsx';
-import Home from './pages/Home.jsx';
-import Products from './pages/Products.jsx';
-import Categories from './pages/Categories.jsx';
-import Wishlist from './pages/Wishlist.jsx';
-import Cart from './pages/Cart.jsx';
-import Lehenga from './pages/Lehenga.jsx';
-import MenShirts from './pages/MenShirts.jsx';
-import Saree from './pages/Saree.jsx';
-import Kurti from './pages/Kurti.jsx';
-import MenKurta from './pages/MenKurta.jsx';
-import Sherwani from './pages/Sherwani.jsx';
-import Sale from './pages/Sale.jsx';
+import { CartProvider } from './Context/CartContext.jsx';
+import Navbar from './Components/Navbar.jsx';
+import Footer from './Components/Footer.jsx';
+import Home from './Pages/Home.jsx';
+import Products from './Pages/Products.jsx';
+import Categories from './Pages/Categories.jsx';
+import Wishlist from './Pages/Wishlist.jsx';
+import Cart from './Pages/Cart.jsx';
+import Lehenga from './Pages/Lehenga.jsx';
+import MenShirts from './Pages/MenShirts.jsx';
+import Saree from './Pages/Saree.jsx';
+import Kurti from './Pages/Kurti.jsx';
+import MenKurta from './Pages/MenKurta.jsx';
+import Sherwani from './Pages/Sherwani.jsx';
+import Sale from './Pages/Sale.jsx';
 
 function App() {
   return (

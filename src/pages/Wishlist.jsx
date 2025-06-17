@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../context/CartContext.jsx';
+import { CartContext } from '../Context/CartContext.jsx';
 
 const Wishlist = () => {
   const { wishlistItems, removeFromWishlist, moveToCart } = useContext(CartContext);

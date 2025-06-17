@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ProductCard from './ProductCard.jsx';
 import ProductView from './ProductView.jsx';
-import { products as defaultProducts } from '../data/dummyData.jsx';
+import { products as defaultProducts } from '../Data/DummyData.jsx';
 
 const ProductGrid = ({ 
   title = "Featured Products", 

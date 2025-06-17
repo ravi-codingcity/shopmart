@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import ProductCard from '../components/ProductCard.jsx';
-import ProductView from '../components/ProductView.jsx';
-import { products } from '../data/dummyData.jsx';
-import { CartContext } from '../context/CartContext.jsx';
+import ProductCard from '../Components/ProductCard.jsx';
+import ProductView from '../Components/ProductView.jsx';
+import { products } from '../Data/DummyData.jsx';
+import { CartContext } from '../Context/CartContext.jsx';
 
 const MenShirts = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { dealCards } from '../data/dummyData.jsx';
+import { dealCards } from '../Data/DummyData.jsx';
 
 const DealCards = () => {
   return (

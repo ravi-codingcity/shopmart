@@ -1,8 +1,8 @@
 import React, { useState, useMemo, useContext } from 'react';
-import ProductCard from '../components/ProductCard.jsx';
-import ProductView from '../components/ProductView.jsx';
-import { products } from '../data/dummyData.jsx';
-import { CartContext } from '../context/CartContext.jsx';
+import ProductCard from '../Components/ProductCard.jsx';
+import ProductView from '../Components/ProductView.jsx';
+import { products } from '../Data/DummyData.jsx';
+import { CartContext } from '../Context/CartContext.jsx';
 import { MdFilterList, MdViewModule, MdViewList, MdClose } from 'react-icons/md';
 
 const Products = () => {

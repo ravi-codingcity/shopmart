@@ -1,6 +1,6 @@
 import React, { useState, useContext, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../context/CartContext.jsx";
+import { CartContext } from "../Context/CartContext.jsx";
 import {
   MdSearch,
   MdFavorite,

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { CartContext } from '../context/CartContext.jsx';
+import { CartContext } from '../Context/CartContext.jsx';
 
 const ProductView = ({ product, isOpen, onClose }) => {
   const [selectedImage, setSelectedImage] = useState(0);

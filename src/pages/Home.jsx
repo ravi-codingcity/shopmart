@@ -1,10 +1,10 @@
 import React from 'react';
-import Hero from '../components/Hero.jsx';
-import CategoryGrid from '../components/CategoryGrid.jsx';
-import ProductGrid from '../components/ProductGrid.jsx';
-import BrandSection from '../components/BrandSection.jsx';
-import PromoBanner from '../components/PromoBanner.jsx';
-import DealCards from '../components/DealCards.jsx';
+import Hero from '../Components/Hero.jsx';
+import CategoryGrid from '../Components/CategoryGrid.jsx';
+import ProductGrid from '../Components/ProductGrid.jsx';
+import BrandSection from '../Components/BrandSection.jsx';
+import PromoBanner from '../Components/PromoBanner.jsx';
+import DealCards from '../Components/DealCards.jsx';
 
 const Home = () => {
   return (
