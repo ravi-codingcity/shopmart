@@ -91,7 +91,7 @@ export const products = [
     id: 2, 
     name: 'Silk Lehenga Choli', 
     price: 12999, 
-    originalPrice: 18999, 
+    originalPrice: 17999, 
     image: Lehenga1,
     gallery: [Lehenga1, Lehenga2],
     rating: 4.9, 
