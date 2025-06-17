@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { CartProvider } from './Context/CartContext.jsx';
+import { CartContext } from './Context/CartContext.jsx';
 import Navbar from './Components/Navbar.jsx';
 import Footer from './Components/Footer.jsx';
 import Home from './Pages/Home.jsx';
@@ -18,7 +18,7 @@ import Sale from './Pages/Sale.jsx';
 
 function App() {
   return (
-    <CartProvider>
+    <CartContext>
       <Router>
         <div className="App">
           <Navbar />
@@ -41,7 +41,7 @@ function App() {
           <Footer />
         </div>
       </Router>
-    </CartProvider>
+    </CartContext>
   );
 }
 
