@@ -1,0 +1,548 @@
+// Import images from assets folder
+import MenKurta1 from '../assets/men/men_kurta_1.jpg';
+import MenKurta2 from '../assets/men/men_kurta_2.jpg';
+import MenKurta3 from '../assets/men/men_kurta_3.jpg';
+import MenKurta4 from '../assets/men/men_kurta_4.jpg';
+import MenShirt1 from '../assets/men_shirts/shirt_1.jpg';
+import MenShirt4 from '../assets/men_shirts/shirt_2.jpg';
+import MenShirt3 from '../assets/men_shirts/shirt_3.jpg';
+import MenShirt2 from '../assets/men/men_kurta_4.jpg';
+import Lehenga1 from '../assets/women/lehenga_1.jpg';
+import Lehenga2 from '../assets/women/lehnga_2.jpg';
+import Lehenga7 from '../assets/women/lehnga_7.jpg';
+import Lehenga4 from '../assets/women/lehnga_4.jpg';
+import Bridal1 from '../assets/women/lehnga_5.jpg';
+import Bridal2 from '../assets/women/lehnga_6.jpg';
+import Saree3 from '../assets/women_saree/saree_1.jpg';
+import Saree4 from '../assets/women_saree/saree_2.jpg';
+import Kurti1 from '../assets/women_kurti/kurti_1.jpg';
+import Kurti2 from '../assets/women_kurti/kurti_2.jpg';
+import Kurti3 from '../assets/women_kurti/kurti_3.jpg';
+import Kurti4 from '../assets/women_kurti/kurti_4.jpg';
+import Sherwani1 from '../assets/sherwani/sherwani_1.jpg';
+import Sherwani2 from '../assets/sherwani/sherwani_2.jpg';
+import Sherwani3 from '../assets/sherwani/sherwani_3.jpg';
+import Sherwani4 from '../assets/sherwani/sherwani_4.jpg';
+
+export const categories = [
+  { 
+    id: 1, 
+    name: 'Electronics', 
+    image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=300&fit=crop&crop=center',
+    productCount: 245,
+    color: 'from-blue-500 to-purple-600'
+  },
+  { 
+    id: 2, 
+    name: 'Fashion', 
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop&crop=center',
+    productCount: 189,
+    color: 'from-pink-500 to-rose-500'
+  },
+  { 
+    id: 3, 
+    name: 'Home & Living', 
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center',
+    productCount: 156,
+    color: 'from-green-500 to-emerald-600'
+  },
+  { 
+    id: 4, 
+    name: 'Sports & Fitness', 
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center',
+    productCount: 98,
+    color: 'from-orange-500 to-red-500'
+  },
+  { 
+    id: 5, 
+    name: 'Beauty & Care', 
+    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop&crop=center',
+    productCount: 112,
+    color: 'from-purple-500 to-indigo-600'
+  },
+  { 
+    id: 6, 
+    name: 'Books & Media', 
+    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop&crop=center',
+    productCount: 87,
+    color: 'from-teal-500 to-cyan-600'
+  },
+];
+
+export const products = [
+  { 
+    id: 1, 
+    name: 'Cotton Kurta for Men', 
+    price: 2499, 
+    originalPrice: 3499, 
+    image: MenKurta1,
+    gallery: [MenKurta1, MenKurta2],
+    rating: 4.8, 
+    reviews: 247,
+    category: 'Men Kurta',
+    brand: 'Ethnic Plus',
+    description: 'Premium quality cotton kurta perfect for festivals and special occasions. Comfortable fit with elegant design.',
+    features: ['100% Cotton', 'Machine Washable', 'Regular Fit', 'Traditional Design'],
+    inStock: true,
+    stockCount: 15,
+    gender: 'Men'
+  },
+  { 
+    id: 2, 
+    name: 'Silk Lehenga Choli', 
+    price: 12999, 
+    originalPrice: 18999, 
+    image: Lehenga1,
+    gallery: [Lehenga1, Lehenga2],
+    rating: 4.9, 
+    reviews: 192,
+    category: 'Lehenga',
+    brand: 'Royal Collection',
+    description: 'Stunning silk lehenga choli with intricate embroidery work. Perfect for weddings and special celebrations.',
+    features: ['Pure Silk', 'Hand Embroidered', 'Semi-Stitched', 'Dupatta Included'],
+    inStock: true,
+    stockCount: 8,
+    gender: 'Women'
+  },
+  { 
+    id: 3, 
+    name: 'Formal Cotton Shirt', 
+    price: 1899, 
+    originalPrice: 2599, 
+    image: MenShirt1,
+    gallery: [MenShirt1, MenShirt2],
+    rating: 4.6, 
+    reviews: 324,
+    category: 'Men Shirts',
+    brand: 'Classic Wear',
+    description: 'Premium cotton formal shirt with modern cut and comfortable fit. Ideal for office and formal occasions.',
+    features: ['100% Cotton', 'Wrinkle Free', 'Slim Fit', 'Easy Care'],
+    inStock: true,
+    stockCount: 25,
+    gender: 'Men'
+  },
+  { 
+    id: 4, 
+    name: 'Traditional Banarasi Saree', 
+    price: 8999, 
+    originalPrice: 12999, 
+    image: Lehenga7,
+    gallery: [Lehenga7, Lehenga4],
+    rating: 4.7, 
+    reviews: 567,
+    category: 'Saree',
+    brand: 'Banarasi House',
+    description: 'Authentic Banarasi silk saree with traditional motifs. Perfect for festivals and special occasions.',
+    features: ['Pure Silk', 'Traditional Weave', 'Zari Work', 'Blouse Piece Included'],
+    inStock: true,
+    stockCount: 12,
+    gender: 'Women'
+  },
+  { 
+    id: 5, 
+    name: 'Bridal Heavy Lehenga Set', 
+    price: 35999, 
+    originalPrice: 49999, 
+    image: Bridal1,
+    gallery: [Bridal1, Bridal2],
+    rating: 4.9, 
+    reviews: 89,
+    category: 'Bridal',
+    brand: 'Bridal Couture',
+    description: 'Exquisite bridal lehenga with heavy embroidery and stone work. Complete set for your special day.',
+    features: ['Heavy Embroidery', 'Stone Work', 'Velvet Fabric', 'Complete Set'],
+    inStock: true,
+    stockCount: 5,
+    gender: 'Women'
+  },
+  { 
+    id: 6, 
+    name: 'Casual Cotton Kurta', 
+    price: 1699, 
+    originalPrice: 2299, 
+    image: MenKurta2,
+    gallery: [MenKurta2, MenKurta1],
+    rating: 4.5, 
+    reviews: 445,
+    category: 'Men Kurta',
+    brand: 'Comfort Zone',
+    description: 'Comfortable cotton kurta for daily wear. Lightweight and breathable fabric perfect for hot weather.',
+    features: ['Lightweight Cotton', 'Breathable', 'Regular Fit', 'Easy Wash'],
+    inStock: true,
+    stockCount: 30,
+    gender: 'Men'
+  },
+  { 
+    id: 7, 
+    name: 'Party Wear Lehenga', 
+    price: 7999, 
+    originalPrice: 11999, 
+    image: Lehenga2,
+    gallery: [Lehenga2, Lehenga1],
+    rating: 4.6, 
+    reviews: 278,
+    category: 'Lehenga',
+    brand: 'Party Perfect',
+    description: 'Elegant party wear lehenga with contemporary design. Perfect for parties and celebrations.',
+    features: ['Georgette Fabric', 'Mirror Work', 'Semi-Stitched', 'Matching Dupatta'],
+    inStock: true,
+    stockCount: 18,
+    gender: 'Women'
+  },
+  { 
+    id: 8, 
+    name: 'Designer Wedding Saree', 
+    price: 15999, 
+    originalPrice: 22999, 
+    image: Lehenga4,
+    gallery: [Lehenga4, Lehenga7],
+    rating: 4.8, 
+    reviews: 156,
+    category: 'Saree',
+    brand: 'Wedding Collection',
+    description: 'Luxurious designer saree perfect for weddings. Rich fabric with beautiful embellishments.',
+    features: ['Designer Embroidery', 'Rich Fabric', 'Heavy Border', 'Contrast Blouse'],
+    inStock: true,
+    stockCount: 7,
+    gender: 'Women'
+  },
+  { 
+    id: 9, 
+    name: 'Banarasi Silk Saree', 
+    price: 12999, 
+    originalPrice: 18999, 
+    image: Lehenga7,
+    gallery: [Lehenga7, Lehenga4],
+    rating: 4.8, 
+    reviews: 234,
+    category: 'Saree',
+    brand: 'Banarasi Heritage',
+    description: 'Exquisite Banarasi silk saree with traditional gold zari work. Perfect for weddings and special occasions.',
+    features: ['Pure Silk', 'Gold Zari Work', 'Traditional Weave', 'Blouse Piece Included'],
+    inStock: true,
+    stockCount: 8,
+    gender: 'Women'
+  },
+  { 
+    id: 10, 
+    name: 'Cotton Handloom Saree', 
+    price: 2999, 
+    originalPrice: 4499, 
+    image: Lehenga4,
+    gallery: [Lehenga4, Saree3],
+    rating: 4.6, 
+    reviews: 156,
+    category: 'Saree',
+    brand: 'Handloom House',
+    description: 'Beautiful cotton handloom saree with block prints. Comfortable for daily wear and office.',
+    features: ['100% Cotton', 'Handloom', 'Block Print', 'Machine Washable'],
+    inStock: true,
+    stockCount: 20,
+    gender: 'Women'
+  },
+  { 
+    id: 11, 
+    name: 'Designer Georgette Saree', 
+    price: 7999, 
+    originalPrice: 11999, 
+    image: Saree3,
+    gallery: [Saree3, Saree4],
+    rating: 4.7, 
+    reviews: 189,
+    category: 'Saree',
+    brand: 'Designer Collection',
+    description: 'Elegant georgette saree with beautiful embroidery work. Perfect for parties and functions.',
+    features: ['Georgette Fabric', 'Embroidery Work', 'Party Wear', 'Contrast Blouse'],
+    inStock: true,
+    stockCount: 12,
+    gender: 'Women'
+  },
+  { 
+    id: 25, 
+    name: 'Traditional Kanjeevaram Saree', 
+    price: 17999, 
+    originalPrice: 20999, 
+    image: Saree4,
+    gallery: [Saree4, Lehenga7],
+    rating: 4.9, 
+    reviews: 98,
+    category: 'Saree',
+    brand: 'South Silk',
+    description: 'Authentic Kanjeevaram silk saree with rich temple border. A timeless piece for special occasions.',
+    features: ['Pure Kanjeevaram Silk', 'Temple Border', 'Rich Pallu', 'Traditional Design'],
+    inStock: true,
+    stockCount: 6,
+    gender: 'Women'
+  },
+   { 
+    id: 12, 
+    name: 'Traditional Shirt', 
+    price: 15999, 
+    originalPrice: 22999, 
+    image: MenShirt4,
+    gallery: [MenShirt4, MenShirt3],
+    rating: 4.9, 
+    reviews: 98,
+    category: 'Men Shirts',
+    brand: 'South Silk',
+    description: 'Authentic Kanjeevaram silk saree with rich temple border. A timeless piece for special occasions.',
+    features: ['Pure Kanjeevaram Silk', 'Temple Border', 'Rich Pallu', 'Traditional Design'],
+    inStock: true,
+    stockCount: 6,
+    gender: 'Men'
+  },
+  { 
+    id: 13, 
+    name: 'Cotton Printed Kurti', 
+    price: 1299, 
+    originalPrice: 1899, 
+    image: Kurti1,
+    gallery: [Kurti1, Kurti2],
+    rating: 4.5, 
+    reviews: 324,
+    category: 'Kurti',
+    brand: 'Ethnic Wear',
+    description: 'Comfortable cotton kurti with beautiful prints. Perfect for daily wear and casual outings.',
+    features: ['100% Cotton', 'Machine Washable', 'Regular Fit', 'Casual Wear'],
+    inStock: true,
+    stockCount: 25,
+    gender: 'Women'
+  },
+  { 
+    id: 14, 
+    name: 'Formal Office Kurti', 
+    price: 2199, 
+    originalPrice: 2999, 
+    image: Kurti2,
+    gallery: [Kurti2, Kurti3],
+    rating: 4.6, 
+    reviews: 198,
+    category: 'Kurti',
+    brand: 'Work Wear',
+    description: 'Elegant formal kurti suitable for office and professional settings. Smart and stylish design.',
+    features: ['Formal Design', 'Wrinkle Free', 'Professional Look', 'Easy Care'],
+    inStock: true,
+    stockCount: 18,
+    gender: 'Women'
+  },
+  { 
+    id: 15, 
+    name: 'Ethnic Embroidered Kurti', 
+    price: 3499, 
+    originalPrice: 4999, 
+    image: Kurti3,
+    gallery: [Kurti3, Kurti4],
+    rating: 4.7, 
+    reviews: 267,
+    category: 'Kurti',
+    brand: 'Traditional',
+    description: 'Beautiful ethnic kurti with intricate embroidery work. Perfect for festivals and special occasions.',
+    features: ['Hand Embroidery', 'Traditional Design', 'Festival Wear', 'Premium Quality'],
+    inStock: true,
+    stockCount: 12,
+    gender: 'Women'
+  },
+  { 
+    id: 16, 
+    name: 'Designer Long Kurti', 
+    price: 2799, 
+    originalPrice: 3799, 
+    image: Kurti4,
+    gallery: [Kurti4, Kurti1],
+    rating: 4.8, 
+    reviews: 145,
+    category: 'Kurti',
+    brand: 'Designer Collection',
+    description: 'Trendy long kurti with modern cuts and styling. Perfect for parties and social gatherings.',
+    features: ['Designer Cut', 'Modern Style', 'Party Wear', 'Comfortable Fit'],
+    inStock: true,
+    stockCount: 15,
+    gender: 'Women'
+  },
+  { 
+    id: 17, 
+    name: 'Traditional Cotton Kurta', 
+    price: 1899, 
+    originalPrice: 2699, 
+    image: MenKurta1,
+    gallery: [MenKurta1, MenKurta2],
+    rating: 4.6, 
+    reviews: 412,
+    category: 'Men Kurta',
+    brand: 'Traditional Wear',
+    description: 'Comfortable cotton kurta perfect for daily wear and casual occasions. Classic design with modern comfort.',
+    features: ['100% Cotton', 'Comfortable Fit', 'Machine Washable', 'Classic Design'],
+    inStock: true,
+    stockCount: 30,
+    gender: 'Men'
+  },
+  { 
+    id: 18, 
+    name: 'Festive Silk Kurta', 
+    price: 3499, 
+    originalPrice: 4999, 
+    image: MenKurta2,
+    gallery: [MenKurta2, MenKurta3],
+    rating: 4.8, 
+    reviews: 256,
+    category: 'Men Kurta',
+    brand: 'Festive Collection',
+    description: 'Elegant silk kurta ideal for festivals and special occasions. Rich fabric with traditional styling.',
+    features: ['Pure Silk', 'Festive Design', 'Rich Finish', 'Special Occasion'],
+    inStock: true,
+    stockCount: 15,
+    gender: 'Men'
+  },
+  { 
+    id: 19, 
+    name: 'Designer Embroidered Kurta', 
+    price: 4799, 
+    originalPrice: 6999, 
+    image: MenKurta3,
+    gallery: [MenKurta3, MenKurta4],
+    rating: 4.7, 
+    reviews: 189,
+    category: 'Men Kurta',
+    brand: 'Designer Collection',
+    description: 'Premium designer kurta with intricate embroidery work. Perfect for weddings and formal events.',
+    features: ['Designer Cut', 'Hand Embroidery', 'Premium Fabric', 'Wedding Wear'],
+    inStock: true,
+    stockCount: 10,
+    gender: 'Men'
+  },
+  { 
+    id: 20, 
+    name: 'Casual Linen Kurta', 
+    price: 2299, 
+    originalPrice: 3299, 
+    image: MenKurta4,
+    gallery: [MenKurta4, MenKurta1],
+    rating: 4.5, 
+    reviews: 324,
+    category: 'Men Kurta',
+    brand: 'Casual Wear',
+    description: 'Lightweight linen kurta perfect for summer and casual outings. Breathable fabric with relaxed fit.',
+    features: ['Linen Fabric', 'Relaxed Fit', 'Breathable', 'Summer Wear'],
+    inStock: true,
+    stockCount: 22,
+    gender: 'Men'
+  },
+  { 
+    id: 21, 
+    name: 'Royal Wedding Sherwani', 
+    price: 24999, 
+    originalPrice: 34999, 
+    image: Sherwani1,
+    gallery: [Sherwani1, Sherwani2],
+    rating: 4.9, 
+    reviews: 187,
+    category: 'Sherwani',
+    brand: 'Royal Collection',
+    description: 'Exquisite wedding sherwani with intricate gold embroidery. Perfect for grooms and special occasions.',
+    features: ['Heavy Embroidery', 'Premium Fabric', 'Wedding Collection', 'Matching Accessories'],
+    inStock: true,
+    stockCount: 8,
+    gender: 'Men'
+  },
+  { 
+    id: 22, 
+    name: 'Designer Silk Sherwani', 
+    price: 18999, 
+    originalPrice: 27999, 
+    image: Sherwani2,
+    gallery: [Sherwani2, Sherwani3],
+    rating: 4.8, 
+    reviews: 234,
+    category: 'Sherwani',
+    brand: 'Designer Couture',
+    description: 'Luxurious silk sherwani with modern cuts and traditional designs. Ideal for receptions and parties.',
+    features: ['Pure Silk', 'Designer Cut', 'Modern Styling', 'Party Wear'],
+    inStock: true,
+    stockCount: 12,
+    gender: 'Men'
+  },
+  { 
+    id: 23, 
+    name: 'Traditional Sherwani Set', 
+    price: 14999, 
+    originalPrice: 21999, 
+    image: Sherwani3,
+    gallery: [Sherwani3, Sherwani4],
+    rating: 4.7, 
+    reviews: 156,
+    category: 'Sherwani',
+    brand: 'Traditional Wear',
+    description: 'Classic traditional sherwani with churidar and dupatta. Complete set for traditional ceremonies.',
+    features: ['Complete Set', 'Traditional Design', 'Comfortable Fit', 'Festival Wear'],
+    inStock: true,
+    stockCount: 15,
+    gender: 'Men'
+  },
+  { 
+    id: 24, 
+    name: 'Premium Velvet Sherwani', 
+    price: 32999, 
+    originalPrice: 45999, 
+    image: Sherwani4,
+    gallery: [Sherwani4, Sherwani1],
+    rating: 4.9, 
+    reviews: 98,
+    category: 'Sherwani',
+    brand: 'Premium Collection',
+    description: 'Luxury velvet sherwani with royal embellishments. The ultimate choice for grand celebrations.',
+    features: ['Velvet Fabric', 'Royal Embellishments', 'Luxury Collection', 'Grand Occasions'],
+    inStock: true,
+    stockCount: 5,
+    gender: 'Men'
+  },
+];
+
+export const brands = [
+  { id: 1, name: 'Nike', category: 'Sportswear' },
+  { id: 2, name: 'Adidas', category: 'Sportswear' },
+  { id: 3, name: 'Puma', category: 'Sportswear' },
+  { id: 4, name: 'Zara', category: 'Fashion' },
+  { id: 5, name: 'H&M', category: 'Fashion' },
+  { id: 6, name: 'Uniqlo', category: 'Casual Wear' },
+  { id: 7, name: 'Levi\'s', category: 'Denim' },
+  { id: 8, name: 'Tommy Hilfiger', category: 'Premium' },
+  { id: 9, name: 'Gucci', category: 'Luxury' },
+  { id: 10, name: 'Prada', category: 'Luxury' },
+  { id: 11, name: 'Versace', category: 'Luxury' },
+  { id: 12, name: 'Calvin Klein', category: 'Premium' }
+];
+
+export const dealCards = [
+  { 
+    id: 1, 
+    title: 'Premium Designer Kurta', 
+    price: 1999, 
+    originalPrice: 2999, 
+    image: MenKurta1, 
+    discount: '33% OFF' 
+  },
+  { 
+    id: 2, 
+    title: 'Silk Saree Collection', 
+    price: 6999, 
+    originalPrice: 9999, 
+    image: Lehenga7, 
+    discount: '30% OFF' 
+  },
+  { 
+    id: 3, 
+    title: 'Bridal Lehenga Set', 
+    price: 8999, 
+    originalPrice: 12999, 
+    image: Lehenga1, 
+    discount: '31% OFF' 
+  },
+  { 
+    id: 4, 
+    title: 'Formal Shirt Collection', 
+    price: 1499, 
+    originalPrice: 2199, 
+    image: MenShirt1, 
+    discount: '32% OFF' 
+  },
+];
